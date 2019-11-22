@@ -31,7 +31,7 @@ redisClient = redis.createClient({
   port: keys.redisPort,
   retry_strategy: () => 1000
 });
-const redisPublisher = redisClient.dublicate()
+const redisPublisher = redisClient.duplicate()
 
 // Express route handlers
 app.get('/', (req, res) => {
